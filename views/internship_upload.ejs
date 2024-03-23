@@ -1,0 +1,51 @@
+
+<%- include('partials/header') %>
+
+    <div class="form-container">
+    <h2>Internship Information</h2>
+    <form action="/internships/upload" method="post">
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required />
+      </div>
+      <div class="form-group">
+        <label for="type">Company:</label>
+        <input type="text" id="company" name="company" required />
+      </div>
+      <div class="form-group">
+        <label for="type">Type: (online/offline)</label>
+        <input type="text" id="type" name="type" required />
+      </div>
+      <div class="form-group">
+        <label for="post_date">Post Date:</label>
+        <input type="date" id="post_date" name="post_date" required />
+      </div>
+      <div class="form-group">
+        <label for="location">Location: (Remote if Online)</label>
+        <input type="text" id="location" name="location" required />
+      </div>
+      <div class="form-group">
+        <label for="duration">Duration: (In Months)</label>
+        <input type="text" id="duration" name="duration" required />
+      </div>
+      <div class="form-group">
+        <label for="start_date">Start Date:</label>
+        <input type="date" id="start_date" name="start_date" required />
+      </div>
+      <div class="form-group">
+        <label for="stipend">Stipend: (In Rupees)</label>
+        <input type="text" id="stipend" name="stipend" required />
+      </div>
+      <div class="form-group">
+        <label for="openings">Openings:</label>
+        <input type="number" id="openings" name="openings" />
+      </div>
+      <div class="form-group">
+        <label for="deadline">Deadline:</label>
+        <input type="date" id="deadline" name="deadline" required />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <%- include('partials/footer') %>
